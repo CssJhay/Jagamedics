@@ -274,30 +274,3 @@ jQuery(document).ready(function ($) {
         });
     });
 });
-jQuery(document).ready(function(){
-    var speed = 1000;
-    try{
-         // check for hash and if div exist... scroll to div
-    var hash = window.location.hash;
-    if($(hash).length) scrollToID(hash, speed); 
-
-    // scroll to div on nav click
-    $('.scroll-link').click(function (e) {
-        e.preventDefault();
-        var id = $(this).attr('href');
-        if($(id ).length) scrollToID(id, speed);
-    });
-    }
-    catch(err){
-        console.log(err);
-        
-}
-   
-})
-
-function scrollToID(id, speed) {
-    var offSet = 90;
-    var obj = $(id).offset();
-    var targetOffset = obj.top - offSet;
-    $('html,body').animate({ scrollTop: targetOffset }, speed);
-}
