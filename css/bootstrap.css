@@ -289,7 +289,7 @@ th {
     }
     .table-bordered th,
     .table-bordered td {
-        border: 1px solid #007daa!important;
+        border: 1px solid #ddd!important;
     }
 }
 
@@ -2845,7 +2845,7 @@ th {
 }
 
 .table-bordered {
-    border: 1px solid #007daa;
+    border: 1px solid #ddd;
 }
 
 .table-bordered>thead>tr>th,
@@ -2854,8 +2854,7 @@ th {
 .table-bordered>thead>tr>td,
 .table-bordered>tbody>tr>td,
 .table-bordered>tfoot>tr>td {
-    border: 1px solid #007daa;
-    background: #007daa;
+    border: 1px solid #ddd;
 }
 
 .table-bordered>thead>tr>th,
@@ -3010,7 +3009,7 @@ table th[class*="col-"] {
         margin-bottom: 15px;
         overflow-y: hidden;
         -ms-overflow-style: -ms-autohiding-scrollbar;
-        border: 1px solid #007daa;
+        border: 1px solid #ddd;
     }
     .table-responsive>.table {
         margin-bottom: 0;
@@ -5390,12 +5389,12 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #777;
+    color: #7c144d;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-    color: #333;
+    color: #007daa;
     background-color: transparent;
 }
 
