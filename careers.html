@@ -1,0 +1,316 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jagamedics| Diagonistics</title>
+
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/color.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/no-css.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+ 
+    
+    <script>
+        var language = "EN",
+            lang = "en",
+            apiurl = "http://www.echolab.ng:88/";
+
+    </script>
+    <style>
+        body {
+            padding-top: 70px;
+        }
+
+        @media screen and (max-width: 800px) {
+            body {
+                padding-top: 120px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding-top: 70px;
+            }
+        }
+
+    </style>
+</head>
+
+<body class="theme-style-1" ng-app="myApp">
+
+    <div id="wrapper">
+
+        <header id="header">
+
+            <nav class="navbar-wrapper navbar-default navbar-fixed-top" role="navigation" style="background-color: #fff;">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-backyard">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#top"><img src="images/HeaderLogo2.jpg" style="height: 80px" alt="logo"></a>
+                    </div>
+
+                    <div id="navbar-scroll" class="collapse navbar-collapse navbar-backyard navbar-right" style="margin-top: 20px; font-size: 1.4em">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home </a></li>
+                            <li><a href="about.html">About </a></li>
+                            <li><a href="accreditation.html">Accreditation </a></li>
+                          
+                            <li><a href="index.html#services">Services </a></li> 
+
+                          
+
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="index.html#footer" style="cursor: pointer">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <form>
+                <div class="shop-box" style=" display: none">
+                    <div class="cp-search-holder">
+                        <input type="text" id="searchfield" placeholder="Enter your search" style="height: 38px">
+                        <button type="submit" onclick="var searchfor = document.getElementById('searchfield').value; document.getElementById('searchfield').value = ''; find(searchfor);"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </form>
+        </header>
+
+
+        <div class="inner-banner">
+            <div class="container">
+                <h1 style="color: #e613b1;">Careers </h1>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Careers </li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="main" ng-controller="careersCtrl">
+
+
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 20px;">
+                    <h2 class="wow fadeInLeft">Job Vacancies</h2>
+                    <div class="title-line wow fadeInRight"></div>
+                </div>
+                <p><strong>Jagamedis</strong> is given in selecting the finest individuals to work at the lab, both on the administrative and technical levels.</p>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="contact-form">
+                            <h3>Please Fill the form below</h3>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input placeholder="Name" required type="text" ng-model="feedname">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input placeholder="Email" required type="text" ng-model="feedemail">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input placeholder="Mobile Number" required type="text" ng-model="feedno">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input placeholder="Date of Birth" required type="text" ng-model="feeddob">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input placeholder="Gender" required type="text" ng-model="feedgender">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input placeholder="Nationality" required type="text" ng-model="feednat">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input placeholder="Address" required type="text" ng-model="feedadd">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input placeholder="Qualification(1)" required type="text" ng-model="feedqual">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input placeholder="Qualification()" required type="text" ng-model="feedqual">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input placeholder="Job Reference" required type="text" ng-model="feedref">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <textarea placeholder="Additional message" cols="10" rows="10" ng-model="feedmsg"></textarea>
+                                    </div>
+                                    <div class="col-md-12" style="width: 400px; margin-left: auto; margin-right: auto;">
+                                        <input value="Send message" type="submit" ng-click="feedback()" onclick="alert('Message sent succesfully, we will get back to you as soon as possible. Thank you.')">
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default" ng-repeat="job in jobs">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse{{job.ID}}" style="cursor: pointer">{{job.Title}}
+                                    <a href="#" style="float: right;" data-toggle="modal" data-target=".bs-example2-modal" ng-click="selectjob(job.ID, job.Title)"><i class="fa fa-check-circle-o fa-lg"></i> Apply now</a>
+                                </a>
+                            </h4>
+                        </div>
+                        
+                        <div id="collapse{{job.ID}}" class="panel-collapse collapse">
+                            <div class="panel-body" style="border-color: #f00">
+                                <h4>Qualifications:</h4>
+                                <ul>
+                                    <li>
+                                        <p ng-bind-html="job.Requirments"></p>
+                                    </li>
+                                </ul>
+                                <h4>Job description:</h4>
+                                <ul>
+                                    <li>
+                                        <p ng-bind-html="job.Description"></p>
+                                    </li>
+                                </ul>
+                                <p>Number Of Vacancy: {{job.No_Of_Vacancy}}</p>
+                                <p>Start: {{job.Create_Date.substr(5, 2)}} / {{job.Create_Date.substr(8, 2)}} / {{job.Create_Date.substr(0, 4)}}</p>
+                                <p>End: {{job.End_Date.substr(5, 2)}} / {{job.End_Date.substr(8, 2)}} / {{job.End_Date.substr(0, 4)}}</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-if="jobs.AllCareers.lenght === 0">No Jobs available Right now.</div>
+                </div>
+                <div class="row">
+                    <div class="text-center">
+
+                    </div>
+
+                </div>
+                <div class="modal fade bs-example2-modal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                                <h3 class="modal-title text-center">Apply now</h3>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-header">
+                                    <input type="hidden" name="u" value="503bdae81fde8612ff4944435">
+                                    <input type="hidden" name="id" value="bfdba52708">
+                                    <div class="form-group">
+                                        <input class="form-control input-lg" name="MERGE1" id="name" type="text" placeholder="Your name" required ng-model="applyname">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control input-lg" name="MERGE0" id="email" type="email" placeholder="Email address" required ng-model="applyemail">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control input-lg" name="MERGE0" id="email" type="text" placeholder="Mobile" required ng-model="applymob">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="Message" placeholder="Message" style="min-height: 80px" ng-model="applymsg"></textarea>
+                                    </div>
+                                    <div class="form-group last">
+                                        <input type="submit" class="btn btn-warning btn-block btn-lg" ng-click="sendmail()" data-dismiss="modal" value="Send">
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <footer id="footer" ng-controller="footerCtrl">
+
+            
+            <section class="footer-section-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <address>
+                               
+                            </address>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="footer-section-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+
+                            <div class="topbar-social">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true" style="color: #0c0c0c"></i></a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true" style="color: #0c0c0c"></i></a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true" style="color: #0c0c0c"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6"><strong class="copyrights"><a href="index.html">Jagamedics</a> &copy; 2021, All Rights Reserved, Design &amp; Developed By: <a href="#" target="_blank">Jagamedics</a></strong></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </footer>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/modernizr.custom.js"></script>
+
+    <script src="js/search-script.js"></script>
+
+    <script src="js/progress.js"></script>
+
+    <script src="js/waypoint.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+
+    <script src="js/jquery.noconflict.js"></script>
+    <script src="js/theme-scripts.js"></script>
+
+    <script src="js/jquery.prettyPhoto.js"></script>
+
+    <script src="js/custom.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="../ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.js"></script>
+    <script src="js/plugins.js"></script>
+</body>
+
+
+
+</html>

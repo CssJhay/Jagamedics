@@ -1,0 +1,277 @@
+﻿<!doctype html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jagamedics| Diagonistics</title>
+
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/color.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/no-css.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+  
+    <script>
+        var language = "EN",
+            lang = "en",
+            apiurl = "http://www.echolab.ng:88/";
+    </script>
+    <style>
+        body {
+            padding-top: 70px;
+        }
+
+        @media screen and (max-width: 800px) {
+            body {
+                padding-top: 120px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding-top: 70px;
+            }
+        }
+    </style>
+</head>
+
+<body class="theme-style-1" ng-app="myApp">
+
+    <div id="wrapper">
+
+        <header id="header">
+            <nav class="navbar-wrapper navbar-default navbar-fixed-top" role="navigation" style="background-color: #fff;">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-backyard">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#top"><img src="images/HeaderLogo2.jpg" style="height: 80px" alt="logo"></a>
+                    </div>
+
+                    <div id="navbar-scroll" class="collapse navbar-collapse navbar-backyard navbar-right" style="margin-top: 20px; font-size: 1.4em">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home </a></li>
+                            <li><a href="about.html">About </a></li>
+                            <li><a href="accreditation.html">Accreditation </a></li>
+                        
+
+                            <li><a href="index.html#services">Services </a></li>
+
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="index.html#footer" style="cursor: pointer">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <form>
+                <div class="shop-box" style=" display: none">
+                    <div class="cp-search-holder">
+                        <input type="text" id="searchfield" placeholder="Enter your search" style="height: 38px">
+                        <button type="submit" onclick="var searchfor = document.getElementById('searchfield').value; document.getElementById('searchfield').value = ''; find(searchfor);"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </form>
+        </header>
+
+
+        <div class="inner-banner">
+            <div class="container">
+                <h1 style="color: #e613b1;">About Us </h1>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">About Us</li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="main" ng-controller="aboutCtrl">
+
+            <section class="about-section">
+                <div class="container">
+                    <div class="welcome-row">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="welcome-frame-1"><img src="images/NIG/welcome-img-1.png" alt="img"></div>
+                                <div class="welcome-frame-2"><img src="images/welcome-img-2.jpg" alt="img"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-box">
+                                    <div class="heading-left">
+                                        <h2>welcome <span>Jagamedics </span></h2>
+                                    </div>
+                                    <div class="holder AboutUS">
+
+                                        <strong>Who we are....</strong></div>
+                                        <strong></strong></div>
+                                        <div>
+                                            &nbsp;</div>
+                                        <div>
+                                            <strong><a href="http://www.Jagamedics.com/"> (Jagamedics)</a> </strong>Jagamedics diagnostics centre is a business arm of Jagamedics Medical Services. Accredited and committed to providing laboratory testing, information and services that are crucial to physicians and other healthcare professionals, supporting them with accurate and timely diagnostics. This aids treatment decision, better healthcare and improved clinical outcome.</div>
+                                        <div>
+                                            &nbsp;</div>
+                                        <div>
+                                            We have changed our brand naIn line with the global occupation health and safety policy, a periodic nanny medical services screening is advocated to ensure that nannies are healthy enough to safely operate in the environment (home) with the employer and other people. This is a periodic screening with the purpose of promoting health and safety in the workplaces..</div>
+                                        <div>
+                                            &nbsp;</div>
+                                        <div>
+                                            Over the years, many lives and loved ones have been lost to contaminated foods and infectious nannies at homes and offices. Sincerely, many of such incidents could be prevented but not compliance to safety standards was a major cause.</div>
+                                        <div>
+                                            &nbsp;</div>
+                                        <div>   
+                                            The meaning of health has evolved over time. In keeping with the biomedical perspective, early definitions of health focused on the theme of the body's ability to function; health was seen as a state of normal function that could be disrupted from time to time by disease. An example of such a definition of health is: "a state characterized by anatomic, physiologic, and psychological integrity; ability to perform personally valued family, work, and community roles; ability to deal with physical, biological, psychological, and social stress". Then in 1948, in a radical departure from previous definitions, the World Health Organization (WHO) proposed a definition that aimed higher: linking health to well-being, in terms of "physical, mental, and social well-being, and not merely the absence of disease and infirmity". Although this definition was welcomed by some as being innovative, it was also criticized as being vague, excessively broad and was not construed as measurable. For a long time, it was set aside as an impractical ideal and most discussions of health returned to the practicality of the biomedical model. 
+                                        <div>
+                                            &nbsp;</div>
+                                        <div>
+                                            Jagamedics Medical Center provides a broad menu of specialized tests. The clinical laboratory test menu includes biochemistry, coagulation, drug abuse screening, heamotology, microbiology, serology, urinalysis.Just as there was a shift from viewing disease as a state to thinking of it as a process, the same shift happened in definitions of health. Again, the WHO played a leading role when it fostered the development of the health promotion movement in the 1980s. This brought in a new conception of health, not as a state, but in dynamic terms of resiliency, in other words, as "a resource for living". In 1984 WHO revised the definition of health defined it as "the extent to which an individual or group is able to realize aspirations and satisfy needs and to change or cope with the environment. Health is a resource for everyday life, not the objective of living; it is a positive concept, emphasizing social and personal resources, as well as physical capacities..&nbsp;</div>
+                                        <div>
+                                            &nbsp;</div>
+                                         <div>  
+                                            However, in all the day to day trial and break, how do we win a fit manner of living and benefit from a pleasurable habit.
+                                            We cannot control what life will throw at us, but we always have the power to choose how to react to it.
+                                        <div>
+                                            &nbsp;</div>
+                                        <div>  
+                                        <strong>
+                                            Choose Jagamedics.......Care for your health…
+                                        </strong>
+                                            
+                                        <div>
+                                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="think-row">
+                        <div class="container">
+                            <div class="clear-row">
+                                <div class="heading-left">
+                                    <h2>We Think different</h2>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                              
+                                    <div class="col-md-4 col-sm-4">
+                                    <h3>
+                                        Our Mission</h3>
+                                    <p>
+                                        <strong><span><span>Committed to providing a genuine laboratory and medical assistance for you at your convenience.</span></span></strong></p>
+                                    <p>
+                                        &nbsp;</p>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <h3>
+                                        <span>Our Vision</span></h3>
+                                    <p>
+                                        <strong><span>Taking medical & healthcare access to the next level.</span></strong><br>
+                                        &nbsp;</p>
+                                    <p>
+                                        &nbsp;</p>
+                                </div>
+                                <p>
+                                    &nbsp;</p>
+                                </div>    
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+           
+        </div>
+
+
+        <footer id="footer" ng-controller="footerCtrl">
+
+            <section class="footer-section-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                        </div>
+ 
+                    </div>
+
+                </div>
+    </div>
+    </section>
+
+
+    <section class="footer-section-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="topbar-social">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true" style="color: #0c0c0c"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true" style="color: #0c0c0c"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true" style="color: #0c0c0c"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6"><strong class="copyrights"><a href="index.html">Jagamedics</a> &copy; 2021, All Rights Reserved, Design &amp; Developed By: <a href="#" target="_blank">Jagamedics</a></strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </footer>
+
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/modernizr.custom.js"></script>
+
+    <script src="js/search-script.js"></script>
+
+    <script src="js/progress.js"></script>
+
+    <script src="js/waypoint.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+
+    <script src="js/jquery.noconflict.js"></script>
+    <script src="js/theme-scripts.js"></script>
+
+    <script src="js/jquery.prettyPhoto.js"></script>
+
+    <script src="js/custom.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="../ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.js"></script>
+    <script src="js/plugins.js"></script>
+</body>
+
+
+</html>
